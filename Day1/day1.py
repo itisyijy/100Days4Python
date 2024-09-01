@@ -19,3 +19,8 @@ print("\n--input function--")
 print("Hello, ", input("What is your name >>> "), "!", sep="")
 #   prompt로 user에게 입력할 data에 대한 hint 제공. cursor를 통해 user부터 data를 입력받음.
 #   nested function -> input 먼저 실행 후 print 실행.
+
+print("\n--variables--")
+name = input("What is your name >>> ")
+length = len(name)
+print("strlen is %d" %length)
