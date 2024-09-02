@@ -1,4 +1,4 @@
-#Day1 for 100Days4Python
+# Day1 for 100Days4Python
 
 #1. Create a greeting for your program.
 #2. Ask the user for the city that they grew up in.
