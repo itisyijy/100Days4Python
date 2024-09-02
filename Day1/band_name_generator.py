@@ -1,3 +1,5 @@
+#Day1 for 100Days4Python
+
 #1. Create a greeting for your program.
 #2. Ask the user for the city that they grew up in.
 #3. Ask the user for the name of a pet.print("Welcome to the Band Name Generator.")
