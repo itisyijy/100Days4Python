@@ -1,4 +1,5 @@
 # Day2 for 100Days4Python
+# Project for Day2
 
 print("Welcome to the tip calculator!")
 total = float(input("What was the total bill? >>> $"))

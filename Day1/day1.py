@@ -1,7 +1,6 @@
 # Day1 for 100Days4Python
 
 import sys
-from tokenize import String
 
 print("--string concatenation--")
 print("Lee" + "Jeongyun")
