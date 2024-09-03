@@ -69,4 +69,4 @@ print("\n--F-String--")
 score = 76
 grade = 4.2
 is_pass = True
-print(f"Score = {score}, Grade = {grade}, Pass = {is_pass}")   # f"~~{variable}~~"
+print(f"Score = {score}, Grade = {grade:.2f}, Pass = {is_pass}")   # f"~~{variable}~~". float formatting -> {var:.nf}
