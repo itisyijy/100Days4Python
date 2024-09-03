@@ -1,4 +1,5 @@
 # Day1 for 100Days4Python
+# I/O
 
 import sys
 
