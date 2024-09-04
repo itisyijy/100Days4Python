@@ -1,3 +1,4 @@
+![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 # [100 Days of Code - Python Exercises] from Udemy
 ---
 ## [Auditorium for Coding Exercise](https://app.auditorium.ai/courses/eelyNMYJKXeNJAbjssSEQz0m88XvnhX6)
