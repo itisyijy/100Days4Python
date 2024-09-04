@@ -8,22 +8,22 @@ input() & print()
 
 ---
 ## [Day 2](https://github.com/itisyijy/100Days4Python/tree/77af9a6683768b1b0a332f67decb469c1f7db45f/Day2)
-Date types
-Type casting
-F-string
+Date types<br>
+Type casting<br>
+F-string<br>
 Numerical operators
 
 ---
 ## [Day 3](https://github.com/itisyijy/100Days4Python/tree/77af9a6683768b1b0a332f67decb469c1f7db45f/Day3)
-Conditional statement
-Code blocks and scope
-Comparison operators
-Modulo operator, %
+Conditional statement<br>
+Code blocks and scope<br>
+Comparison operators<br>
+Modulo operator, %<br>
 Logical operator
 
 ---
 ## [Day 4](https://github.com/itisyijy/100Days4Python/tree/77af9a6683768b1b0a332f67decb469c1f7db45f/Day4)
-Module
-Randomization
-List
+Module<br>
+Randomization<br>
+List<br>
 Python docs
