@@ -22,4 +22,4 @@ var = 0
 var += 3                # var = var + 3
 var -= 5                # var = var - 5
 var *= -1               # var = var * -1
-var /= 2                # var = var / 2
+var /= 2                # var `= var / 2
