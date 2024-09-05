@@ -29,6 +29,6 @@ List<br>
 Python docs
 
 ---
-## [Day 5]()
+## [Day 5](https://github.com/itisyijy/100Days4Python/tree/ea67c6d4dae9087e953cbbe50e3270ff6cc284db/Day5)
 Loop statement
 random.function
