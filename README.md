@@ -27,3 +27,8 @@ Module<br>
 Randomization<br>
 List<br>
 Python docs
+
+---
+## [Day 5]()
+Loop statement
+random.function
