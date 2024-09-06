@@ -1,5 +1,5 @@
 # Day5 for 100Days4Python
-# Project for Day4
+# Project for Day5
 import random
 
 decimal_list = ['0','1','2','3','4','5','6','7','9']
