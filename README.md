@@ -32,3 +32,10 @@ Python docs
 ## [Day 5](https://github.com/itisyijy/100Days4Python/tree/ea67c6d4dae9087e953cbbe50e3270ff6cc284db/Day5)
 Loop statement<br>
 random.function
+
+---
+## [Day 6](https://github.com/itisyijy/100Days4Python/tree/d8f443d26e642ad23d9ab2f8c966deb740da9200/Day6)
+Define Function<br>
+Code Blocks & Indentation<br>
+While Loop<br>
+[reeborg's world](https://reeborg.ca/index_en.html) for Practice While Loop
