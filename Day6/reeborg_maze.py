@@ -1,5 +1,5 @@
 # Day6 for 100Days4Python
-# Project for Day4
+# Project for Day6
 
 # Try Reeborg : https://reeborg.ca/index_en.html
 
