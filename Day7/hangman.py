@@ -18,17 +18,19 @@ for i in chosen_word:
     placeholder.append("_")
 
 display = placeholder
+log = []
 while display != chosen_word and lives != 0:
     print(" ".join(display))
     guess = input("Guess a letter >>> ").lower()
-    if guess in display:
-        print(f"**********You've already guessed {guess}.**********")
+    if guess in display or guess in log:
+        print(f"**********You've already guessed {guess}.**********\n\n")
         continue
     for index in range(len(chosen_word)):
         if guess == chosen_word[index]:
             display[index] = guess
     if guess not in chosen_word:
         lives -= 1
+        log.append(guess)
         print(f"******* {guess} is not in the word. Lives -1*******")
     print(stages[lives])
     print(f"***************{lives}/6 Lives Left.***************\n\n")
