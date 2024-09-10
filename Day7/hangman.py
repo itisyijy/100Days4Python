@@ -11,7 +11,6 @@ lives = 6
 word_list = hangman_word_list.word_list
 stages = hangman_ascii_art.stages
 chosen_word = list(random.choice(word_list))
-print("".join(chosen_word))
 
 placeholder = []
 for i in chosen_word:
@@ -35,6 +34,7 @@ while display != chosen_word and lives != 0:
     print(stages[lives])
     print(f"***************{lives}/6 Lives Left.***************\n\n")
 
+print(f"***************ANSWER : {''.join(chosen_word)}***************")
 if lives == 0:
     print("******************YOU LOSE*******************")
 else:
