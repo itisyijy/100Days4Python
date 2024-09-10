@@ -1,6 +1,6 @@
 ![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 
-# [100 Days of Code - Python Exercises] from Udemy
+# [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
 ---
 
