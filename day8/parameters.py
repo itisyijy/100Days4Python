@@ -18,5 +18,3 @@ print("\n-------------------------------------------------")
 greet_with(location="Washington", name="Donald")    # keyword argument
 greet_with(name="Donald", location="Washington")    # keyword argument
 
-# Project for Day8
-# Caesar Cipher
