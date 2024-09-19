@@ -21,12 +21,18 @@ while more_bid:
         more_bid = False
     clear_console()
 
+print(auction)
+
+#1 get key with max value in dictionary
 winner = ""
 amount = 0
 for bidder in auction:
     if amount < auction[bidder]:
         winner = bidder
         amount = auction[bidder]
-print(auction)
-print(f"The winner is {winner} with a bid of ${amount}")
+print(f"[FOR] The winner is {winner} with a bid of ${amount}")
 
+#2 get key with max value in dictionary
+winner = max(auction, key=auction.get)
+amount = max(auction.values())
+print(f"[MAX] The winner is {winner} with a bid of ${amount}")
