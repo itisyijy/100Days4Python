@@ -72,3 +72,7 @@ difference between parameter and argument<br>
 positional argument(default) & keyword argument<br>
 caesar cipher<br>
 
+## [Day 9](https://github.com/itisyijy/100Days4Python/tree/6acf21357a08ed6d2c7345bb718e30650d457d15/Day9)
+Dictionary<br>
+Nesting List & Dictionary<br>
+Blind Auction<br>
