@@ -10,29 +10,27 @@ capital = {
 }
 # Call Value By Key
 print(capital["Japan"])
-print("-------------------------------")
+print("1-------------------------------")
 
 # Add New Item On Dictionary
 capital["China"] = "Beijing"
 print(capital)
-print("-------------------------------")
+print("2-------------------------------")
 
 
 # Edit Item In Dictionary
 capital["Korea"] = "Busan"
 print(capital["Korea"])
-print("-------------------------------")
+print("3-------------------------------")
 
 # For Loop with Dictionary
 for key in capital:
     print(key)
     print(capital[key])
-print("-------------------------------")
+print("4-------------------------------")
 
 # Wipe All Items In Dictionary
 capital = {}
 print(capital)
-print("-------------------------------")
-
-# Nesting
+print("5-------------------------------")
 
