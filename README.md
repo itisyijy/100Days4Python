@@ -77,3 +77,7 @@ Dictionary<br>
 Nesting List & Dictionary<br>
 Blind Auction<br>
 max() function in dictionary<br>
+
+## [Day 10](https://github.com/itisyijy/100Days4Python/tree/6acf21357a08ed6d2c7345bb718e30650d457d15/Day9)
+return in defining function<br>
+function name call in dictionary value<br>
