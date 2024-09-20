@@ -85,3 +85,10 @@ max() function in dictionary<br>
 ## [Day 10](https://github.com/itisyijy/100Days4Python/tree/6acf21357a08ed6d2c7345bb718e30650d457d15/Day9)
 return in defining function<br>
 function name call in dictionary value<br>
+
+---
+
+## [Day 11](https://github.com/itisyijy/100Days4Python/tree/805be17186470409092e39dd55e55af4ed181869/Day11)
+Capstone Design : Blackjack<br>
+Difference : .extend() & .append()<br>
+
