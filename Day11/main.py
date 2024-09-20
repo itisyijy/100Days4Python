@@ -19,7 +19,7 @@ while replay:
         # 2 - Player's Turn : Hit Or Stand
         hit = blackjack.hit_or_stand()
         while hit and blackjack.bust_check(player) != -1:
-            blackjack.hit_card(player, deck, 1)
+            blackjack.deal_card(player, deck, 1)
             blackjack.show_hands(dealer, player, 1)
             if blackjack.bust_check(player): # Player is bust. Check the result
                 blackjack.show_hands(dealer, player, 0)
@@ -31,7 +31,7 @@ while replay:
         if not blackjack.bust_check(player):
             blackjack.show_hands(dealer, player, 0)
             while blackjack.hand_sum(dealer) <= 16:
-                blackjack.hit_card(dealer, deck, 1)
+                blackjack.deal_card(dealer, deck, 1)
                 blackjack.show_hands(dealer, player, 0)
             blackjack.judge(dealer, player)
     else: # Player is blackjack. Check the result.

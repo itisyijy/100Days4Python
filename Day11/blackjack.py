@@ -36,7 +36,7 @@ def hit_or_stand():
         print("You Chose STAND")
     return hit
 
-def hit_card(hand, deck, count):
+def deal_card(hand, deck, count):
     """
     Each player can hit number of cards from deck\n
     hit cards are removed from the deck
@@ -57,10 +57,10 @@ def init_game(player1, player2, deck):
     :param player2: who get a card last
     :param deck: card deck
     """
-    hit_card(player1, deck, 1)
-    hit_card(player2, deck, 1)
-    hit_card(player1, deck, 1)
-    hit_card(player2, deck, 1)
+    deal_card(player1, deck, 1)
+    deal_card(player2, deck, 1)
+    deal_card(player1, deck, 1)
+    deal_card(player2, deck, 1)
 
 def hand_sum(hand):
     """
