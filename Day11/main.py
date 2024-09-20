@@ -12,7 +12,7 @@ while replay:
     player = []
 
     # 1 - Initial Deal
-    blackjack.init_game(dealer, player, deck)
+    blackjack.start_game(dealer, player, deck)
     blackjack.show_hands(dealer, player, 1)
 
     if blackjack.hand_sum(player) != 21: # Player is not blackjack. Keep going.
@@ -23,7 +23,6 @@ while replay:
             blackjack.show_hands(dealer, player, 1)
             if blackjack.bust_check(player): # Player is bust. Check the result
                 blackjack.show_hands(dealer, player, 0)
-                blackjack.judge(dealer, player)
                 break
             hit = blackjack.hit_or_stand()
 
@@ -33,8 +32,7 @@ while replay:
             while blackjack.hand_sum(dealer) <= 16:
                 blackjack.deal_card(dealer, deck, 1)
                 blackjack.show_hands(dealer, player, 0)
-            blackjack.judge(dealer, player)
-    else: # Player is blackjack. Check the result.
+    else:
         blackjack.show_hands(dealer, player, 0)
-        blackjack.judge(dealer, player)
+    blackjack.judge(dealer, player)
     replay = int(input("\nREPLAY [1] or END [0] >>> "))

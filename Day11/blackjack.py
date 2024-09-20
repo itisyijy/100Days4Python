@@ -45,10 +45,10 @@ def deal_card(hand, deck, count):
     :param deck: left card deck
     :param count: number of cards player want to hit
     """
-    hand.extend(random.sample(deck, count))
+    hand.extend(random.sample(deck, count)) # random.sample return 'list' -> .extend(O) / .append(X)
     deck.remove(hand[-1])
 
-def init_game(player1, player2, deck):
+def start_game(player1, player2, deck):
     """
     Start the Blackjack.\n
     Each player get 2 cards from the deck one by one.
@@ -90,7 +90,7 @@ def bust_check(hand):
     """
     if hand_sum(hand) > 21:     # Bust
         return 1
-    elif hand_sum(hand) == 21:  # Blackjack
+    elif hand_sum(hand) == 21 and len(hand) == 2:  # Blackjack
         return -1
     else:                       # Ongoing
         return 0
@@ -106,9 +106,9 @@ def judge(dealer, player):
         print("!! House BUST !!")
     elif bust_check(player) == 1:
         print("!! Player BUST !!")
-    elif hand_sum(player) == 21:
+    elif bust_check(player) == -1:
         print("!! Player Blackjack !!")
-    elif hand_sum(dealer) == 21:
+    elif bust_check(dealer) == -1:
         print("!! Dealer Blackjack !!")
     elif hand_sum(dealer) > hand_sum(player):
         print("!! House Win !!")
@@ -117,16 +117,16 @@ def judge(dealer, player):
     else:
         print("!! PUSH !!")
 
-def show_hands(dealer, player, option):
+def show_hands(dealer, player, hide):
     """
     show each hand of dealer and player
 
     :param dealer:
     :param player:
-    :param option: hide dealer's second card = 1 / show all cards = 0
+    :param hide: hide dealer's second card = 1 / show all cards = 0
     """
     print("\n------------------------------------")
-    if option:
+    if hide:
         print(f"DEALER : ['{dealer[0]}', '?'] >>> {hand_sum([dealer[0]])}")
     else:
         print(f"DEALER : {dealer} >>> {hand_sum(dealer)}")
