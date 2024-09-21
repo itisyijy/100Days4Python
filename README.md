@@ -100,3 +100,18 @@ Constant<br>
 Project : Number Guessing<br>
 
 ---
+## [Day 13](https://github.com/itisyijy/100Days4Python/tree/8c1fb58cdb1264008e2e4a80d9b9d823333274b8/Day13)
+try & except<br>
+>### Everyone gets bugs.
+>### Debugging Tips
+>1. Describe The Problem.
+>2. Reproduce The Bug
+>3. Play Computer
+>4. Fix The Error
+>5. print() is your friend
+>6. Use A Debugger
+>7. Take A Rest
+>8. Ask A Friend
+>9. Run Often
+>10. Ask Stackoverflow
+
