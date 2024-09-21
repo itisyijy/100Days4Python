@@ -92,3 +92,11 @@ function name call in dictionary value<br>
 Capstone Design : Blackjack<br>
 Difference : .extend() & .append()<br>
 
+---
+
+## [Day 12](https://github.com/itisyijy/100Days4Python/tree/cd854aa53ad1e43de126da6b3d9e66cc1f389911/Day12)
+Scope (Global & Local)<br>
+Constant<br>
+Project : Number Guessing<br>
+
+---
