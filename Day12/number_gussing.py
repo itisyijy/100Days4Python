@@ -34,16 +34,20 @@ def check_answer(guess, answer):
         return 1
     return 0
 
-guess = 0
-attempts = set_difficulty()
-answer = random.randint(1, 100)
-print(answer)
-while attempts:
-    print(f"\nRemaining Attempts : [{attempts}]")
-    guess = int(input("Make guess >>> "))
-    if check_answer(guess, answer):
-        break
-    else:
-        attempts -= 1
-if not attempts:
-    print("You Lose.")
+def number_guessing():
+    attempts = set_difficulty()
+    answer = random.randint(1, 100)
+    # print(answer)  # For Debugging
+    while attempts:
+        print(f"\nRemaining Attempts : [{attempts}]")
+        guess = int(input("Make guess >>> "))
+        if check_answer(guess, answer):
+            break
+        else:
+            attempts -= 1
+    if not attempts:
+        print(f"You Lose. The correct answer was {answer}.")
+    if input("Do you want to play again? [y/n]: ").lower() == 'y':
+        number_guessing()
+
+number_guessing()
