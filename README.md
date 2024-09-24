@@ -125,3 +125,25 @@
 ## [Day 14](https://github.com/itisyijy/100Days4Python/tree/27ef9db2735b5f7b32df12c86ce635a1e0868a66/Day14)
 * Higher Lower Game
 * random.choice()
+
+```
+def is_answer()
+
+...
+
+¡MY CODE!
+if a.get("follower_count") >= b.get("follower_count") and guess == 'a':
+     return True
+ elif a.get("follower_count") <= b.get("follower_count") and guess == 'b':
+     return True
+ else:
+     return False
+    
+# ¡SOLUTION!
+if a.get("follower_count") >= b.get("follower_count"):
+    return guess == 'a'
+else:
+    return guess == 'b'
+
+...
+```
