@@ -117,5 +117,7 @@ try & except<br>
 
 ---
 ## [Day 14](https://github.com/itisyijy/100Days4Python/tree/27ef9db2735b5f7b32df12c86ce635a1e0868a66/Day14)
+Higher Lower Game
+random.choice()
 
 
