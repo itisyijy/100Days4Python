@@ -1,7 +1,4 @@
 # Day13 for 100Days4Python
-
-# Project for Day13
-
 # try & except
 while True:
     try:

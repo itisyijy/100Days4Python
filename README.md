@@ -115,3 +115,7 @@ try & except<br>
 >9. Run Often
 >10. Ask Stackoverflow
 
+---
+## [Day 14](https://github.com/itisyijy/100Days4Python/tree/27ef9db2735b5f7b32df12c86ce635a1e0868a66/Day14)
+
+
