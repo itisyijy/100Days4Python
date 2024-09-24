@@ -65,8 +65,11 @@ def resource_check(order):
             if order != "espresso":
                 if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
                     return True
+                print("Sorry there is not enough milk.")
                 return False
             return True
+        print("Sorry there is not enough coffee.")
+    print("Sorry there is not enough water.")
     return False
 
 def transaction(order):
@@ -103,3 +106,4 @@ while user_order:
         resource_report()
     elif user_order and resource_check(user_order) and transaction(user_order):
         make_coffee(user_order)
+        
