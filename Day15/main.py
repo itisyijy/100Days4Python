@@ -96,7 +96,7 @@ def make_coffee(order):
     resources["coffee"] -= MENU[order]["ingredients"]["coffee"]
     if order != "espresso":
         resources["milk"] -= MENU[order]["ingredients"]["milk"]
-    print(f"Here is your {order}. Enjoy!")
+    print(f"Here is your {order} 🍵. Enjoy!")
     
 # TODO 1. Prompt user by asking “ What would you like? (espresso/latte/cappuccino): "
 user_order = True
