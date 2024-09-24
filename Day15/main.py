@@ -100,11 +100,13 @@ def make_coffee(order):
     print(f"Here is your {order} 🍵. Enjoy!")
     
 # TODO 1. Prompt user by asking “ What would you like? (espresso/latte/cappuccino): "
-user_order = True
-while user_order:
-    user_order = get_order()
-    if user_order == "report":
-        resource_report()
-    elif user_order and resource_check(user_order) and transaction(user_order):
-        make_coffee(user_order)
-        
+def coffee_machine():
+    user_order = True
+    while user_order:
+        user_order = get_order()
+        if user_order == "report":
+            resource_report()
+        elif user_order and resource_check(user_order) and transaction(user_order):
+            make_coffee(user_order)
+
+coffee_machine()
