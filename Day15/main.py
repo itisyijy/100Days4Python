@@ -34,8 +34,8 @@ MENU = {
 
 resources = {
     "water": 300,
-    "milk": 200,
-    "coffee": 100,
+    "milk": 2000,
+    "coffee": 10,
 }
 money = 0.0
 
@@ -69,7 +69,8 @@ def resource_check(order):
                 return False
             return True
         print("Sorry there is not enough coffee.")
-    print("Sorry there is not enough water.")
+    else:
+        print("Sorry there is not enough water.")
     return False
 
 def transaction(order):
