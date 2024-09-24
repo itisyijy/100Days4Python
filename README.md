@@ -163,23 +163,23 @@ else:
 ```
 def resource_check(order):
     # ¡MY CODE!
-    if resources["water"] >= MENU[order]["ingredients"]["water"]:
-        if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
-            if order != "espresso":
-                if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
-                    return True
-                print("Sorry there is not enough milk.")
-                return False
-            return True
-        print("Sorry there is not enough coffee.")
-    else:
-        print("Sorry there is not enough water.")
-    return False
+    # if resources["water"] >= MENU[order]["ingredients"]["water"]:
+    #     if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
+    #         if order != "espresso":
+    #             if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
+    #                 return True
+    #             print("Sorry there is not enough milk.")
+    #             return False
+    #         return True
+    #     print("Sorry there is not enough coffee.")
+    # else:
+    #     print("Sorry there is not enough water.")
+    # return False
 
     # ¡SOLUTION!
     ingredients = MENU[order]["ingredients"]
     for item in ingredients:
-        if item == resources[item]:
+        if resources[item] < ingredients[item]:
             print(f"Sorry there is not enough {item}.")
             return False
     return True
