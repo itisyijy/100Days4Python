@@ -33,17 +33,17 @@ def status(is_ongoing, score):
 def higher_lower():
     score = 0
     is_ongoing = True
-    a_side = data[random.randint(0, len(data) - 1)]
+    a_side = random.choice(data)
     while status(is_ongoing, score):
-        b_side = data[random.randint(0, len(data) - 1)]
+        b_side = random.choice(data)
         while a_side == b_side:
-            b_side = data[random.randint(0, len(data) - 1)]
+            b_side = random.choice(data)
         print(f"Compare A: {a_side['name']}, a {a_side['description']}, from {a_side['country']}.")
         print(vs)
         print(f"Against B: {b_side['name']}, a {b_side['description']}, from {b_side['country']}.")
         is_ongoing = is_answer(a_side, b_side)
         if is_ongoing:
             score += 1
-        a_side = b_side
+            a_side = b_side
 
 higher_lower()
