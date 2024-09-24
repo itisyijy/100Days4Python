@@ -160,4 +160,27 @@ else:
 ## [Day 15](https://github.com/itisyijy/100Days4Python/tree/c3a2d479bf60c7192e476f6f976b81dfff548a0f/Day15)
 
 - coffee machine project
-- 
+```
+def resource_check(order):
+    # ¡MY CODE!
+    if resources["water"] >= MENU[order]["ingredients"]["water"]:
+        if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
+            if order != "espresso":
+                if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
+                    return True
+                print("Sorry there is not enough milk.")
+                return False
+            return True
+        print("Sorry there is not enough coffee.")
+    else:
+        print("Sorry there is not enough water.")
+    return False
+
+    # ¡SOLUTION!
+    ingredients = MENU[order]["ingredients"]
+    for item in ingredients:
+        if item == resources[item]:
+            print(f"Sorry there is not enough {item}.")
+            return False
+    return True
+```

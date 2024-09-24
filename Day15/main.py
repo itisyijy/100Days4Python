@@ -35,7 +35,7 @@ MENU = {
 resources = {
     "water": 3000,
     "milk": 2000,
-    "coffee": 1000,
+    "coffee": 10,
 }
 money = 0.0
 
@@ -60,18 +60,27 @@ def resource_report():
   
 # TODO 4. Check resources sufficient?
 def resource_check(order):
-    if resources["water"] >= MENU[order]["ingredients"]["water"]:
-        if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
-            if order != "espresso":
-                if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
-                    return True
-                print("Sorry there is not enough milk.")
-                return False
-            return True
-        print("Sorry there is not enough coffee.")
-    else:
-        print("Sorry there is not enough water.")
-    return False
+    # ¡MY CODE!
+    # if resources["water"] >= MENU[order]["ingredients"]["water"]:
+    #     if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
+    #         if order != "espresso":
+    #             if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
+    #                 return True
+    #             print("Sorry there is not enough milk.")
+    #             return False
+    #         return True
+    #     print("Sorry there is not enough coffee.")
+    # else:
+    #     print("Sorry there is not enough water.")
+    # return False
+
+    # ¡SOLUTION!
+    ingredients = MENU[order]["ingredients"]
+    for item in ingredients:
+        if resources[item] < ingredients[item]:
+            print(f"Sorry there is not enough {item}.")
+            return False
+    return True
 
 def transaction(order):
     # TODO 5. Process coins.
@@ -93,10 +102,11 @@ def transaction(order):
 
 # TODO 7. Make Coffee.
 def make_coffee(order):
-    resources["water"] -= MENU[order]["ingredients"]["water"]
-    resources["coffee"] -= MENU[order]["ingredients"]["coffee"]
+    ingredient = MENU[order]["ingredients"]
+    resources["water"] -= ingredient["water"]
+    resources["coffee"] -= ingredient["coffee"]
     if order != "espresso":
-        resources["milk"] -= MENU[order]["ingredients"]["milk"]
+        resources["milk"] -= ingredient["milk"]
     print(f"Here is your {order} 🍵. Enjoy!")
     
 # TODO 1. Prompt user by asking “ What would you like? (espresso/latte/cappuccino): "
