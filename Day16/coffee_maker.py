@@ -1,5 +1,6 @@
 # Day16 for 100Days4Python
 # Project for Day16 : OOP Coffee Machine
+# Class Material
 
 class CoffeeMaker:
     """Models the machine that makes the coffee"""
