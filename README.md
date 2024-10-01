@@ -202,3 +202,16 @@ increasing complexity and number of relationships
 Object is a way of combining data and functionality altogether in the same thing
 
 2 factors : attributes (what it has) & methods (what it does)
+
+---
+
+## [Day 17](https://github.com/itisyijy/100Days4Python/tree/758702e77fa5902c1fc1842d64758a7afb914d5d/Day17)
+
+- PascalCase, camelCase, snake_case
+- Constructor "\_\_init\_\_()"
+- Initialize attributes
+- Declare methods
+- Meaning of 'self' keyword
+- 'pass' keyword
+- Making or modify object's attributes
+- Call object's method
