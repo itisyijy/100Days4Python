@@ -133,26 +133,26 @@
 - Higher Lower Game
 - random.choice()
 
-```
-def is_answer()
+```python
+def is_answer():
 
-...
-
-¡MY CODE!
-if a.get("follower_count") >= b.get("follower_count") and guess == 'a':
-     return True
- elif a.get("follower_count") <= b.get("follower_count") and guess == 'b':
-     return True
- else:
-     return False
-
-# ¡SOLUTION!
-if a.get("follower_count") >= b.get("follower_count"):
-    return guess == 'a'
-else:
-    return guess == 'b'
-
-...
+    ...
+    
+    # ¡MY CODE!
+    if a.get("follower_count") >= b.get("follower_count") and guess == 'a':
+        return True
+    elif a.get("follower_count") <= b.get("follower_count") and guess == 'b':
+        return True
+    else:
+        return False
+    
+    # ¡SOLUTION!
+    if a.get("follower_count") >= b.get("follower_count"):
+        return guess == 'a'
+    else:
+        return guess == 'b'
+    
+    ...
 ```
 
 ---
@@ -160,21 +160,21 @@ else:
 ## [Day 15](https://github.com/itisyijy/100Days4Python/tree/c3a2d479bf60c7192e476f6f976b81dfff548a0f/Day15)
 
 - coffee machine project
-```
+```python
 def resource_check(order):
     # ¡MY CODE!
-    # if resources["water"] >= MENU[order]["ingredients"]["water"]:
-    #     if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
-    #         if order != "espresso":
-    #             if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
-    #                 return True
-    #             print("Sorry there is not enough milk.")
-    #             return False
-    #         return True
-    #     print("Sorry there is not enough coffee.")
-    # else:
-    #     print("Sorry there is not enough water.")
-    # return False
+    if resources["water"] >= MENU[order]["ingredients"]["water"]:
+        if resources["coffee"] >= MENU[order]["ingredients"]["coffee"]:
+            if order != "espresso":
+                if resources["milk"] >= MENU[order]["ingredients"]["milk"]:
+                    return True
+                print("Sorry there is not enough milk.")
+                return False
+            return True
+        print("Sorry there is not enough coffee.")
+    else:
+        print("Sorry there is not enough water.")
+    return False
 
     # ¡SOLUTION!
     ingredients = MENU[order]["ingredients"]
@@ -215,3 +215,41 @@ Object is a way of combining data and functionality altogether in the same thing
 - 'pass' keyword
 - Making or modify object's attributes
 - Call object's method
+
+---
+
+## [Day 18]()
+### Importing Modules
+```python
+# import module_name
+import turtle
+tim = turtle.Turtle()
+
+# from module_name import thing_in_module -> reducing redundancy
+from turtle import Turtle
+tom = Turtle()
+
+# from module_name import * -> avoidable
+from turtle import *
+joe = Screen()
+```
+
+### Aliasing Modules
+```python
+# import module_name as alias_name
+import turtle as t
+kim = t.Turtle()
+```
+
+### Installing Modules
+- python standard library: already installed
+- others: installation needed. PyCharm will helps you.
+
+### Tuple
+
+```python
+# tuple implementation
+my_tuple = (1, 10, 3, 5, 7)
+```
+- 'tuple' is similar with 'list', but it has an immutable order. 
+- Items of tuple and tuple itself cannot be modified.
