@@ -1,4 +1,4 @@
-![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
+from turtle import Turtle![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
@@ -253,3 +253,26 @@ my_tuple = (1, 10, 3, 5, 7)
 ```
 - 'tuple' is similar with 'list', but it has an immutable order. 
 - Items of tuple and tuple itself cannot be modified.
+
+---
+
+## [Day 19]()
+### Function as Inputs(Arguments)
+```python
+def function_a(arg):
+    return
+
+# Arguments -> Function Name Without Parenthesis
+def function_b(function_a):
+    return
+```
+### Instaces
+```python
+from turtle import Turtle
+timmy = Turtle()
+tommy = Turtle()
+```
+- Turtle() -> class
+- timmy, tommy, ... -> object
+- timmy != tommy -> different instance
+  - each instance can have own state
