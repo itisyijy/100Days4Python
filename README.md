@@ -253,3 +253,16 @@ my_tuple = (1, 10, 3, 5, 7)
 ```
 - 'tuple' is similar with 'list', but it has an immutable order. 
 - Items of tuple and tuple itself cannot be modified.
+
+---
+
+## [Day 19]()
+Function as Inputs(Arguments)
+```python
+def function_a(arg):
+    return
+
+# Arguments -> Function Name Without Parenthesis
+def function_b(function_a):
+    return
+```
