@@ -256,7 +256,7 @@ my_tuple = (1, 10, 3, 5, 7)
 
 ---
 
-## [Day 19]()
+## [Day 19](https://github.com/itisyijy/100Days4Python/tree/0b61b17e10355de9de687c07a6677ad2659e920a/Day19)
 ### Function as Inputs(Arguments)
 ```python
 def function_a(arg):
