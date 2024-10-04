@@ -1,4 +1,4 @@
-![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
+from Day05.password_generator import alphabet_list![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
@@ -276,3 +276,52 @@ tommy = Turtle()
 - timmy, tommy, ... -> object
 - timmy != tommy -> different instance
   - each instance can have own state
+
+---
+
+## [Day20_21]()
+### Class Inheritance
+The idea that classes can inherit from other classes(attributes and methods).
+```python
+# Superclass
+class Animal:
+    def __init__(self):
+        self.num_eyes = 2
+    
+    def breath(self):
+      print("inhale, exhale")
+
+# Subclass
+# Fish class inherits Animal class.
+class Fish(Animal):
+    def __init__(self):
+        super().__init__()
+
+    def breath(self):
+        super().breath()
+        print("doing this underwater")
+        
+    def swim(self):
+        print("moving in water.")
+
+nemo = Fish()
+nemo.swim()     # moving in water
+nemo.breath()   # inhale, exhale doing this underwater
+print(f"Number of eyes : {nemo.num_eyes}")  # 2
+```
+
+### Slicing
+How to slice python list, tuple, and dictionary
+
+```python
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(alphabet)  # ['a', 'b', 'c', 'd', 'e', 'f', 'g']  
+print(alphabet[2:5])  # ['c', 'd', 'e']
+print(alphabet[:5])  # ['a', 'b', 'c', 'd', 'e']
+print(alphabet[2:])  # ['c', 'd', 'e', 'f', 'g']
+print(alphabet[2:5:2])  # ['c', 'e']
+print(alphabet[2::2])  # ['c', 'e', 'g']
+print(alphabet[:5:2])  # ['a', 'c', 'e']
+print(alphabet[::2])  # ['a', 'c', 'e', 'g']
+print(alphabet[::-1])  # ['g', 'f', 'e', 'd', 'c', 'b', 'a']
+```
