@@ -3,10 +3,9 @@
 
 from turtle import Turtle
 
+PADDLE_MOVE = 20
+
 # Create and move a paddle
-MOVE_DISTANCE = 20
-
-
 class Paddle(Turtle):
     def __init__(self, cor):
         super().__init__()
@@ -18,10 +17,10 @@ class Paddle(Turtle):
         
     def go_up(self):
         print("up")
-        new_y = self.ycor() + MOVE_DISTANCE
+        new_y = self.ycor() + PADDLE_MOVE
         self.goto(self.xcor(), new_y)
     
     def go_down(self):
         print("down")
-        new_y = self.ycor() - MOVE_DISTANCE
+        new_y = self.ycor() - PADDLE_MOVE
         self.goto(self.xcor(), new_y)
