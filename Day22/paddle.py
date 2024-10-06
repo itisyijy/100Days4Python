@@ -5,6 +5,7 @@ from turtle import Turtle
 
 PADDLE_MOVE = 20
 
+
 # Create and move a paddle
 class Paddle(Turtle):
     def __init__(self, cor):
@@ -16,11 +17,9 @@ class Paddle(Turtle):
         self.goto(cor)
         
     def go_up(self):
-        print("up")
         new_y = self.ycor() + PADDLE_MOVE
         self.goto(self.xcor(), new_y)
     
     def go_down(self):
-        print("down")
         new_y = self.ycor() - PADDLE_MOVE
         self.goto(self.xcor(), new_y)
