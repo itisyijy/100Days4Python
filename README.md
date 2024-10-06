@@ -1,4 +1,4 @@
-from Day05.password_generator import alphabet_list![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
+![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
@@ -279,7 +279,7 @@ tommy = Turtle()
 
 ---
 
-## [Day20_21]()
+## [Day 20_21]()
 ### Class Inheritance
 The idea that classes can inherit from other classes(attributes and methods).
 ```python
@@ -325,3 +325,8 @@ print(alphabet[:5:2])  # ['a', 'c', 'e']
 print(alphabet[::2])  # ['a', 'c', 'e', 'g']
 print(alphabet[::-1])  # ['g', 'f', 'e', 'd', 'c', 'b', 'a']
 ```
+
+---
+
+## [Day 22](https://github.com/itisyijy/100Days4Python/tree/0c3afe9cca52840d069bf7dff3731d31c50ad3d5/Day22)
+### The Pong Game
