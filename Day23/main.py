@@ -12,36 +12,32 @@ screen.setup(width=600, height=700)
 screen.tracer(0)
 
 player = Player()
+cars = CarManager()
 scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkeypress(fun=player.up, key="Up")
 
-level = 1
-cars = []
-car_gap = 0
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
     
-    if car_gap % 6 == 0:
-        car_gap = 0
-        new_car = CarManager()
-        cars.append(new_car)
-    for car in cars:
-        car.move(level - 1)
-    car_gap += 1
+    cars.create_car()
+    cars.move()
     
-    for car in cars:
-        if -25 <= car.xcor() <= 25 and player.ycor() -20 <= car.ycor() <= player.ycor() + 20:
+    # Detect collision with car
+    for car in cars.all_cars:
+        if player.distance(car) <= 20:
             scoreboard.game_over()
             game_is_on = False
             break
-    if player.ycor() >= 290:
-        level += 1
+    
+    # Detect collision with finish line
+    if player.ycor() >= 280:
         player.start_position()
-        scoreboard.update_level(level)
+        scoreboard.update_level()
+        cars.level_up()
         time.sleep(1)
-        car = []
+
 screen.exitonclick()
