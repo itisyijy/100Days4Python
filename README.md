@@ -389,7 +389,7 @@ class CarManager(Turtle):
 
 ---
 
-## [Day 24]()
+## [Day 24](https://github.com/itisyijy/100Days4Python/tree/83efb07b6a56140d07c07d357e4022b28ca07fc1/Day24)
 ### File Access
 ```python
 file = open("file.txt", mode="")
