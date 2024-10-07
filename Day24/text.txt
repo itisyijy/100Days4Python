@@ -1,0 +1,3 @@
+Hello World!
+I am studying python language.
+Python is amazing!

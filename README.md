@@ -386,3 +386,51 @@ class CarManager(Turtle):
     def level_up(self):
         self.move_speed += MOVE_INCREMENT
 ```
+
+---
+
+## [Day 24]()
+### File Access
+```python
+file = open("file.txt", mode="")
+file.read()     # mode="r", read
+file.write()    # mode="w", write or mode="a", append
+file.close()    # free resources
+
+# no need for .close()
+with open("file.txt", mode="") as file:
+    file.read()
+    file.write()
+```
+>[w]rite mode can make file with the contents when the file name doesn't exist.
+If the file exist, then overwrite the contents.
+
+>In [r]ead mode, file contents are only readable. It cannot be modified.
+
+>[a]ppend mode add the contents in EOF
+
+### Paths
+#### Absolute File Path
+> /mnt/c/Users/itisyijy/Desktop/100Days4Python/Day24
+> 
+> The first " / " is root.
+
+Absolute file path always start off relative of the root 
+
+#### Relative File Path
+> ./100Days4Python/Day24
+> 
+> " . " is working directory.
+> 
+>In this case, "/mnt/c/Users/itisyijy/Desktop" is current directory.
+> 
+> " ./ " is optional
+
+> ../README.md
+> 
+> " .. " is parent directory.
+> 
+>In this case, "/mnt/c/Users/itisyijy/Desktop100Days4Python/Day24" is current directory.
+
+- Absolute file path always start off relative of the root
+- Relative file path is relative with your current working directory.
