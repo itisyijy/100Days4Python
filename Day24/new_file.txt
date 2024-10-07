@@ -1,0 +1,1 @@
+[w]rite mode can make file and overwrite the content.
