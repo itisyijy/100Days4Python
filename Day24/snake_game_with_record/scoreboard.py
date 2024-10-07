@@ -12,9 +12,12 @@ FONT = ("Arial", 20, "normal")
 # 5. create a scoreboard
 class Scoreboard(Turtle):
     def __init__(self):
-        self.score = 0
-
         super().__init__()
+        self.score = 0
+        
+        # Day 24
+        self.record = 0
+        
         self.penup()
         self.hideturtle()
         self.color("white")
@@ -22,13 +25,23 @@ class Scoreboard(Turtle):
         self.show_scoreboard()
     
     def show_scoreboard(self):
-        self.write(f"Score: {self.score}", align=ALIGN, font=FONT)
+        self.write(f"Score: {self.score} | Best Record: {self.record}", align=ALIGN, font=FONT)
 
     def update_score(self):
         self.score += 1
         self.clear()
         self.show_scoreboard()
 
-    def game_over(self):
-        self.home()
-        self.write(f"Game Over", align=ALIGN, font=FONT)
+    # Day 24
+    # def game_over(self):
+    #     self.home()
+    #     self.write("Game Over", align=ALIGN, font=FONT)
+
+    # Day 24
+    def update_record(self):
+        if self.record < self.score:
+            self.record = self.score
+        self.score = 0
+        self.clear()
+        self.show_scoreboard()
+        
