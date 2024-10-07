@@ -26,8 +26,8 @@ class Scoreboard(Turtle):
         self.show_scoreboard()
     
     def read_record(self):
-        with open("data.txt", mode="r") as best_record:
-            self.record = int(best_record.read())
+        with open("data.txt", mode="r") as data:
+            self.record = int(data.read())
     
     def show_scoreboard(self):
         self.read_record()
@@ -46,8 +46,8 @@ class Scoreboard(Turtle):
     # Day 24
     def update_record(self):
         if self.record < self.score:
-            with open("data.txt", mode="w") as best_record:
-                best_record.write(f"{self.score}")
+            with open("data.txt", mode="w") as data:
+                data.write(f"{self.score}")
         self.score = 0
         self.clear()
         self.show_scoreboard()
