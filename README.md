@@ -434,3 +434,29 @@ Absolute file path always start off relative of the root
 
 - Absolute file path always start off relative of the root
 - Relative file path is relative with your current working directory.
+
+---
+
+## [Day 25]()
+### Working with CSV File
+CSV(Comma-Separated Values) : Representing tabular data that fits in table such as spreadsheet.
+```python
+# Using csv
+import csv
+
+with open("./weather_data.csv") as data_file:
+    weather_data = csv.reader(data_file)
+    temperatures = []
+    for row in weather_data:
+        if row[1] != "temp":
+            temperatures.append(int(row[1]))
+    print(temperatures)
+    
+# Using pandas -> much easier
+import pandas
+
+weather_data = pandas.read_csv("./weather_data.csv")
+print(weather_data["temp"])
+
+```
+### Pandas for Data Analyzing
