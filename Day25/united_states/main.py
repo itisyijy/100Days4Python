@@ -14,16 +14,21 @@ screen.addshape(us_map)
 turtle.shape(us_map)
 
 states_csv = "./50_states.csv"
-states_info = pandas.read_csv(states_csv)
-states_list = states_info["state"].tolist()
+data = pandas.read_csv(states_csv)
+states_list = data["state"].tolist()
 
 while len(states_list):
-    answer = screen.textinput(title=f"{50 - len(states_list)}/50 States Correct", prompt="What's another state's name?")
-    if answer.title() in states_list:
-        x = int(states_info[states_info.state == answer.title()].x)
-        y = int(states_info[states_info.state == answer.title()].y)
+    answer = screen.textinput(title=f"{50 - len(states_list)}/50 States Correct",
+                              prompt="What's another state's name?").title()
+    if answer == "Exit":
+        break
+    elif answer in states_list:
+        state_data = data[data.state == answer]
         state_marker = State()
-        state_marker.write_name(answer.title(), x, y)
-        states_list.remove(answer.title())
+        state_marker.write_name(answer.title(), state_data.x, state_data.y)
+        states_list.remove(answer)
 
-turtle.mainloop()   # instead of "screen.exitonclick()", keep screen open when code is over.
+df_missing_states = pandas.DataFrame(states_list)
+df_missing_states.to_csv("./states_to_learn.csv")
+
+#turtle.mainloop()   # instead of "screen.exitonclick()", keep screen open when code is over.
