@@ -437,7 +437,7 @@ Absolute file path always start off relative of the root
 
 ---
 
-## [Day 25]()
+## [Day 25](https://github.com/itisyijy/100Days4Python/tree/857d92d36f77d01d03979986831101ee42d1083c/Day25)
 ### Working with CSV File
 CSV(Comma-Separated Values) : Representing tabular data that fits in table such as spreadsheet.
 ```python
@@ -460,3 +460,17 @@ print(weather_data["temp"])
 
 ```
 ### Pandas for Data Analyzing
+
+## [Day26]()
+### List Comprehension
+```python
+with open("./file1.txt", mode="r") as file1:
+    one = [int(num) for num in file1.readlines()]
+with open("./file2.txt", mode="r") as file2:
+    two = [int(num) for num in file2.readlines()]
+
+print(one, two)
+result = [i for i in one if i in two]
+
+print(result)
+```
