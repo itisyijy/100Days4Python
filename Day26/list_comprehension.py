@@ -1,5 +1,5 @@
 # Day26 for 100Days4Python
-# Day26 : List & Dictionary Comprehension -> only available in python
+# Day26 : List Comprehension -> only available in python
 
 numbers = [1, 2, 3]
 new_numbers = []
@@ -28,5 +28,3 @@ short_names = [name for name in names if len(name) < 5]
 long_names = [name.upper() for name in names if len(name) > 5]
 print(short_names)  # ['Li', 'Mia', 'Zoe', 'Finn', 'Yara']
 print(long_names)   # ['JONATHAN', 'ALEXANDER', 'ELIZABETH', 'GABRIELLE', 'CHRISTOPHER']
-
-
