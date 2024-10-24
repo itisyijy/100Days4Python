@@ -14,12 +14,13 @@ print(students_scores)
 # Pattern : new_dict = {new_key:new_value for (key,value) in dict.items() if condition}
 passed_students = {student: score for (student, score) in students_scores.items() if score > 60}
 print(passed_students)
+
+# Loop through a data frame
 players = {
     "name": ["Son", "Maddison", "Solanke", "Kulusevski", "Romero"],
     "number": [7, 10, 19, 21, 17],
 }
 
-# Loop through a data frame
 players_df = pandas.DataFrame(players)
 print(players_df)
 

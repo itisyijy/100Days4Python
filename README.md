@@ -498,8 +498,9 @@ print(result_pandas)
 result_pandas.to_csv("./result.csv")    # make DataFrame .csv file
 
 ```
-## [Day26]()
+## [Day26](https://github.com/itisyijy/100Days4Python/tree/09cecff2cc7cea6a3031e9e3dc4565632d90a917/Day26)
 ### List Comprehension
+``` new_list = [new item for item in list if condition]```
 ```python
 with open("./file1.txt", mode="r") as file1:
     one = [int(num) for num in file1.readlines()]
@@ -510,4 +511,31 @@ print(one, two)
 result = [i for i in one if i in two]
 
 print(result)
+```
+
+### Dictionary Comprehension
+```new_dict = {new_key:new_value for item in list}```
+```python
+import random
+
+names = ['Li', 'Mia', 'Zoe', 'Finn', 'Yara', 'Jonathan', 'Alexander', 'Elizabeth', 'Gabrielle', 'Christopher']
+students_scores = {student: random.randint(1, 100) for student in names}
+print(students_scores)
+
+passed_students = {student: score for (student, score) in students_scores.items() if score > 60}
+print(passed_students)
+```
+```new_dict = {new_key:new_value for (key,value) in dict.items() if condition}```
+```python
+import pandas
+
+players = {
+    "name": ["Son", "Maddison", "Solanke", "Kulusevski", "Romero"],
+    "number": [7, 10, 19, 21, 17],
+}
+
+players_df = pandas.DataFrame(players)
+
+for (index, row) in players_df.iterrows():
+    print(row["name"], row["number"])
 ```
