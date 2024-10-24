@@ -451,12 +451,50 @@ with open("./weather_data.csv") as data_file:
         if row[1] != "temp":
             temperatures.append(int(row[1]))
     print(temperatures)
-    
-# Using pandas -> much easier
-import pandas
-
-weather_data = pandas.read_csv("./weather_data.csv")
-print(weather_data["temp"])
 
 ```
 ### Pandas for Data Analyzing
+```python
+import pandas
+
+data = pandas.read_csv("./weather_data.csv")
+
+# DataFrame(2D) in pandas
+data_dict = data.to_dict()
+print(data)
+print(data_dict)
+
+# Series(1D) in pandas
+temp = data["temp"].to_list()
+print(temp)
+
+# Get mean value in "temp" column
+print(sum(temp) / len(temp))
+print(data["temp"].mean())
+
+#  Get max value in "temp" column
+print(data["temp"].max())
+
+# Get data in columns
+print(data["condition"])    # like dictionary
+print(data.condition)       # like object
+
+# Get data in rows
+print(data[data.day == "Monday"])
+print(data[data.temp == data.temp.max()])
+
+# Convert Monday temperature to Fahrenheit
+monday = data[data.day == "Monday"]
+print(monday.temp)
+print(monday.temp * (9 / 5) + 32)
+
+# Create a DataFrame from scratch
+result = {
+    "students": ["Pedro", "James", "Micky"],
+    "scores": [76, 56, 65],
+}
+result_pandas = pandas.DataFrame(result)
+print(result_pandas)
+result_pandas.to_csv("./result.csv")    # make DataFrame .csv file
+
+```
