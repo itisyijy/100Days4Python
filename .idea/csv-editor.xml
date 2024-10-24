@@ -31,13 +31,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Day25\united_states\learn.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\Day25\united_states\states_to_learn.csv">
           <value>
             <Attribute>
