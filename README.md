@@ -540,7 +540,7 @@ for (index, row) in players_df.iterrows():
     print(row["name"], row["number"])
 ```
 
-## [Day 27]()
+## [Day 27](https://github.com/itisyijy/100Days4Python/tree/d259d47e2c45ced1ea1caf27d0968191f8c4df2f/Day27)
 ### Advanced Python Arguments
 ```python
 # Arguments with Default Values
