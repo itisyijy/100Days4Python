@@ -498,7 +498,7 @@ print(result_pandas)
 result_pandas.to_csv("./result.csv")    # make DataFrame .csv file
 
 ```
-## [Day26](https://github.com/itisyijy/100Days4Python/tree/09cecff2cc7cea6a3031e9e3dc4565632d90a917/Day26)
+## [Day 26](https://github.com/itisyijy/100Days4Python/tree/09cecff2cc7cea6a3031e9e3dc4565632d90a917/Day26)
 ### List Comprehension
 ``` new_list = [new item for item in list if condition]```
 ```python
@@ -539,3 +539,46 @@ players_df = pandas.DataFrame(players)
 for (index, row) in players_df.iterrows():
     print(row["name"], row["number"])
 ```
+
+## [Day 27]()
+### Advanced Python Arguments
+```python
+# Arguments with Default Values
+def f1(a=1, b=2, c=3):
+    print(a, b, c)
+
+# Unlimited Positional Arguments, *args
+def f2(n1, n2):
+    return n1 + n2
+
+def f3(*args):
+    result = 0
+    for n in args:  # args -> tuple type
+        result += n
+    return result
+
+# Many Keyworded Arguments, **kwargs
+def f4(n, **kwargs):
+    n += kwargs["add"]  # kwargs -> dictionary type
+    n *= kwargs["multiply"]
+    return n
+
+# 
+class Car:
+    def __init__(self, **kwargs):
+        self.brand = kwargs.get("brand")    # .get() -> return None when no value
+        self.model = kwargs.get("model")    # kwargs[""] -> error can occur when no value
+        self.color = kwargs.get("color")
+        self.seats = kwargs.get("seats")
+
+```
+
+### Tkinter Widgets
+> Label, Entry, Button, Scale, Text, 
+> Spinbox, Checkbutton, Radiobutton, Listbox, ...
+### Tkinter Layout Managers : no mix pack() with grid()
+>pack()
+>
+> place(x=i, y=j)
+> 
+> grid(column:i, row=j)
