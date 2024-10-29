@@ -80,3 +80,21 @@ window.minsize(width=390, height=400)
 session = Label(text="Timer", font=(FONT_NAME, 40, "bold"), background=YELLOW, foreground=GREEN)
 session.grid(column=1, row=0)
 
+check_marks = Label(font=(FONT_NAME, 20, "bold"), background=YELLOW, foreground=GREEN)
+check_marks.grid(column=1, row=3)
+
+# UI : Canvas Widget
+canvas = Canvas(width=210, height=234, background=YELLOW, highlightthickness=0)
+tomato_img = PhotoImage(file="./tomato.png")
+canvas.create_image(105, 117, image=tomato_img)
+timer_text = canvas.create_text(110, 135, text="00:00", fill="white", font=(FONT_NAME, 30, "bold"))
+canvas.grid(column=1, row=1)
+
+# UI : Button
+start_button = Button(text="Start", command=start_timer)
+start_button.grid(column=0, row=2)
+
+reset_button = Button(text="Reset", command=reset_timer)
+reset_button.grid(column=2, row=2)
+
+window.mainloop()
