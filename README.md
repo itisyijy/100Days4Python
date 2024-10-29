@@ -599,3 +599,26 @@ def func():
 id = tkinter.Tk().after(100, func)
 tkinter.Tk().after_cancel(id)
 ```
+
+## [Day 29](https://github.com/itisyijy/100Days4Python/tree/340b0efd10f2d26ef63b76ae5076afdb8769bfde/Day29)
+### Password Manager
+```python
+import pyperclip
+
+text = "Hello World!"
+pyperclip.copy(text)
+pyperclip.paste()
+
+from tkinter import messagebox
+messagebox.showinfo()
+messagebox.askyesno()
+...
+
+from tkinter import *
+label = Label()
+label.grid(column=1, row=1, columnspan=2, sticky="NSWE")
+
+entry = Entry()
+entry_value = entry.get()
+entry.delete(0, END)
+```
