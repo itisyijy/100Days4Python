@@ -1,4 +1,4 @@
-![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
+from tkinter import PhotoImage![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
@@ -582,3 +582,20 @@ class Car:
 > place(x=i, y=j)
 > 
 > grid(column:i, row=j)
+
+## [Day 28](https://github.com/itisyijy/100Days4Python/tree/8c054a1690ddb25e4d0c72c04be1e8686394417a/Day28)
+### Pomodoro based on TKinter
+```python
+import tkinter
+
+# Canvas widget : image, text ...
+tkinter.Canvas().create_image(image=tkinter.PhotoImage())
+tkinter.Canvas().create_text()
+
+# like time.sleep(100) in Tkinter
+def func():
+  pass
+
+id = tkinter.Tk().after(100, func)
+tkinter.Tk().after_cancel(id)
+```
