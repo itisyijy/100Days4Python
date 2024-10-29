@@ -89,6 +89,6 @@ listbox.pack()
 # Widget Layout Manager -> pack + grid = X
 my_label.pack()
 my_button.place(x=100, y=100)
-my_entry.grid(column=5, row=3)
+# my_entry.grid(column=5, row=3)
 
 window.mainloop()   # display window. mainloop() should be end line
