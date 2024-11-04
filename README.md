@@ -622,3 +622,49 @@ entry = Entry()
 entry_value = entry.get()
 entry.delete(0, END)
 ```
+
+## [Day 30](https://github.com/itisyijy/100Days4Python/tree/dbf190bda9c208c25249656eeea787b45cb997d7/Day30)
+### Handling Errors and Exceptions
+>Frequently Occur : if/else
+> 
+> Rarely Occur : try/except
+
+```python
+a_dict = {"key": "value"}
+
+try:    # Something that might cause an exception
+    file = open("./a_file.txt")
+    print(a_dict["lock"])
+
+except FileNotFoundError:   # Do this if there was an exception
+    file = open("./a_file.txt", mode="w")
+    file.write("Something")
+
+except KeyError as error_message:   # Multiple "except" is possible
+    print(f"KeyError: {error_message}")
+
+else:   # Do this if there were no exceptions
+    content = file.readlines()
+    print(content)
+    file.close()
+
+finally:    # Do this no matter what happens
+    raise IndexError("Intentional Error Occurrence")    # Raise Own Exception
+
+```
+
+### JSON File
+- Format : Nested Dictionary
+```python
+import json
+
+new_data = "blah"
+with open("data.txt", mode="r") as file:
+    data = json.load(file)  # READ
+
+data.update(new_data)   # UPDATE
+
+with open("data.txt", mode="w") as file:
+    json.dump(data, file)    # WRITE
+
+```
