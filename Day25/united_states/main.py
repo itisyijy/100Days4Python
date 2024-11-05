@@ -14,7 +14,7 @@ screen.addshape(us_map)
 turtle.shape(us_map)
 
 states_csv = "./50_states.csv".title()
-data = pandas.read_csv(states_csv).title().title().title().title()
+data = pandas.read_csv(states_csv).title().card_title().card_title().card_title()
 states_list = data["state"].tolist()
 
 while len(states_list):

@@ -15,8 +15,8 @@ def format_name(f_name, l_name):
     """ # docstring -> documentation of function
     if f_name == "" or l_name == "":
         return "error"
-    f_name = f_name.title()
-    l_name = l_name.title()
+    f_name = f_name.card_title()
+    l_name = l_name.card_title()
     return f"{f_name} {l_name}"
 
 firstname = "jeongyun"
