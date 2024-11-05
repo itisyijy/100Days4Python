@@ -668,3 +668,18 @@ with open("data.txt", mode="w") as file:
     json.dump(data, file)    # WRITE
 
 ```
+
+## [Day 31](https://github.com/itisyijy/100Days4Python/tree/a935c1194d80c1c3c57d9d0a028e22e09bbd70bf/Day31)
+### Flash Card Program
+* Pandas
+  * read_csv()
+  * to_csv()
+  * to_dict()
+* Random
+* Tkinter
+  * after() / after_cancel()
+  * Canvas
+    * create_image()
+    * create_text()
+    * itemconfig()
+  * Button 
