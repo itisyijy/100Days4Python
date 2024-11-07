@@ -1,5 +1,5 @@
 # Day32 for 100Days4Python
-# Project for Day32 : Birthday Wisher!
+# Project for Day32 : Birthday Wisher
 
 import random
 import pandas
