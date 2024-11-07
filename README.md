@@ -1,4 +1,7 @@
-![python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
+<p align="center">
+  <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" /><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/320px-Udemy_logo.svg.png">
+</p>
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
 
@@ -697,7 +700,50 @@ with open("data.txt", mode="w") as file:
 
 ---
 
-## [Day 32]()
+## [Day 32](https://github.com/itisyijy/100Days4Python/tree/952f99a1ec12bbe0e3a91ed8448de988afb3f6a2/Day32)
 ### What is SMTP(Simple Mail Transfer Protocol)?
 > the rules that determine how an email is received by mail servers
-> passed onto the next mail server and how email can be sent around 
+> passed onto the next mail server and how email can be sent around
+
+### smtplib
+```python
+import smtplib
+
+from_email = "itisyijy@gmail.com"
+from_password = input(f"{from_email}\nPASSWORD : ")
+
+to_email = "graycona@yahoo.com"
+
+# TLS, Transport Layer Security. Protocol Designed to Secure and Encrypt Communications over a Computer Network
+
+# gmail_connection = smtplib.SMTP("smtp.gmail.com")
+# gmail_connection.starttls()
+# gmail_connection.login(user=from_email, password=from_password)
+# gmail_connection.sendmail(from_addr=from_email, to_addrs=to_email,
+#                           msg="Subject:Hello\n\nThis is the body of email.")
+# gmail_connection.close()
+
+with smtplib.SMTP("smtp.gmail.com") as gmail_connection:
+    gmail_connection.starttls()
+    gmail_connection.login(user=from_email, password=from_password)
+    gmail_connection.sendmail(from_addr=from_email, to_addrs=to_email,
+                              msg="Subject:Hello\n\nThis is the body of email.")    # \n\n ~ body
+```
+
+### datetime
+```python
+import datetime
+
+# Current Time
+now = datetime.datetime.now()
+now_year = now.year
+now_month = now.month
+now_day = now.day
+now_weekday = now.weekday() # 0 MON / 1 TUE / 2 WED / 3 THU / 4 FRI / 5 SAT / 6 SUN
+print(now_year, now_month, now_day, now_weekday)
+
+my_birthday = datetime.datetime(year=1948, month=8, day=15)
+print(my_birthday)
+```
+
+---
