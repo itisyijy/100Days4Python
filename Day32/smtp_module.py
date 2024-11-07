@@ -1,5 +1,5 @@
 # Day32 for 100Days4Python
-# Day32 : Email SMTPsm
+# Day32 : Email SMTP
 
 import smtplib
 
