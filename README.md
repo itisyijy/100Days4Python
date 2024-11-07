@@ -498,6 +498,9 @@ print(result_pandas)
 result_pandas.to_csv("./result.csv")    # make DataFrame .csv file
 
 ```
+
+---
+
 ## [Day 26](https://github.com/itisyijy/100Days4Python/tree/09cecff2cc7cea6a3031e9e3dc4565632d90a917/Day26)
 ### List Comprehension
 ``` new_list = [new item for item in list if condition]```
@@ -539,6 +542,8 @@ players_df = pandas.DataFrame(players)
 for (index, row) in players_df.iterrows():
     print(row["name"], row["number"])
 ```
+
+---
 
 ## [Day 27](https://github.com/itisyijy/100Days4Python/tree/d259d47e2c45ced1ea1caf27d0968191f8c4df2f/Day27)
 ### Advanced Python Arguments
@@ -583,6 +588,8 @@ class Car:
 > 
 > grid(column:i, row=j)
 
+---
+
 ## [Day 28](https://github.com/itisyijy/100Days4Python/tree/8c054a1690ddb25e4d0c72c04be1e8686394417a/Day28)
 ### Pomodoro based on TKinter
 ```python
@@ -622,6 +629,8 @@ entry = Entry()
 entry_value = entry.get()
 entry.delete(0, END)
 ```
+
+---
 
 ## [Day 30](https://github.com/itisyijy/100Days4Python/tree/dbf190bda9c208c25249656eeea787b45cb997d7/Day30)
 ### Handling Errors and Exceptions
@@ -669,6 +678,8 @@ with open("data.txt", mode="w") as file:
 
 ```
 
+---
+
 ## [Day 31](https://github.com/itisyijy/100Days4Python/tree/a935c1194d80c1c3c57d9d0a028e22e09bbd70bf/Day31)
 ### Flash Card Program
 * Pandas
@@ -683,3 +694,10 @@ with open("data.txt", mode="w") as file:
     * create_text()
     * itemconfig()
   * Button 
+
+---
+
+## [Day 32]()
+### What is SMTP(Simple Mail Transfer Protocol)?
+> the rules that determine how an email is received by mail servers
+> passed onto the next mail server and how email can be sent around 
