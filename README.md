@@ -747,3 +747,16 @@ print(my_birthday)
 ```
 
 ---
+
+## [Day 33]()
+### Application Programming Interface, API
+> Set of commands, functions, protocols, and objects
+> that programmers can use to create software or interact with an external system.
+
+### API Endpoint (URL) : Location that data is stored
+### API Response Code
+> - 1XX : Hold On
+> - 2XX : Here You Go
+> - 3XX : Go Away
+> - 4XX : You Screwed Up
+> - 5XX : I Screwed Up
