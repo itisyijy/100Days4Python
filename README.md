@@ -753,7 +753,7 @@ print(my_birthday)
 
 ---
 
-## [Day 33]()
+## [Day 33](https://github.com/itisyijy/100Days4Python/tree/dbaac87d164ebc301c01774dc7ce25e404121fe4/Day33)
 ### Application Programming Interface, API
 > Set of commands, functions, protocols, and objects
 > that programmers can use to create software or interact with an external system.
