@@ -754,7 +754,24 @@ print(my_birthday)
 > that programmers can use to create software or interact with an external system.
 
 ### API Endpoint (URL) : Location that data is stored
-### API Response Code
+### API Request
+```python
+import requests
+
+# response code
+parameters = {
+  "key": "value",
+              }
+response = requests.get("api.something.com", params=parameters)
+
+# make error
+response.raise_for_status()
+
+# json format data
+data = response.json()     
+
+```
+#### API Response Code
 > - 1XX : Hold On
 > - 2XX : Here You Go
 > - 3XX : Go Away
