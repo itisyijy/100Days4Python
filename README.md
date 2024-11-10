@@ -782,3 +782,30 @@ data = response.json()
 > - 3XX : Go Away
 > - 4XX : You Screwed Up
 > - 5XX : I Screwed Up
+
+---
+
+## [Day 34]()
+### HTML Entity
+```python
+
+```
+
+### Type Hint
+```python
+# Assign Type of Variable #
+name: str
+height: float
+name = "Jordan"
+height = [172]      # Error message
+
+# Assign Type of Return Value #
+def is_adult(age: int) -> bool:
+    if age >= 19:
+        return True
+    else:
+      return "No"   # Error message
+
+
+is_adult("twelve")  # Error message
+```
