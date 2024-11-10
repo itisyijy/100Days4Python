@@ -785,10 +785,12 @@ data = response.json()
 
 ---
 
-## [Day 34]()
+## [Day 34](https://github.com/itisyijy/100Days4Python/tree/ce6bf22c5be6d711796ded79c097226c8bbc00e2/Day34)
 ### HTML Entity
 ```python
+import html
 
+html.unescape("This is an example with &lt;b&gt;bold&lt;/b&gt; text.")
 ```
 
 ### Type Hint
