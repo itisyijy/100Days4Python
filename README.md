@@ -1,4 +1,4 @@
-<p align="center">
+from tkinter import Label<p align="center">
   <a href="https://docs.python.org/3/">
     <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
   </a>
@@ -810,4 +810,11 @@ def is_adult(age: int) -> bool:
 
 
 is_adult("twelve")  # Error message
+```
+
+### .grid() padding
+```python
+import tkinter
+
+tkinter.Label().grid(column=1, row=2, padx=20, pady=10)
 ```
