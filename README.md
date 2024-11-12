@@ -1,4 +1,4 @@
-from tkinter import Label<p align="center">
+<p align="center">
   <a href="https://docs.python.org/3/">
     <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
   </a>
@@ -817,4 +817,40 @@ is_adult("twelve")  # Error message
 import tkinter
 
 tkinter.Label().grid(column=1, row=2, padx=20, pady=10)
+```
+
+---
+
+## [Day35](https://github.com/itisyijy/100Days4Python/tree/65a71d62fc72ca586409939b98397f47f5ae15e9/Day35)
+### API Key for User Authentication
+
+### Slicing
+```python
+list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+lsit_3_to_8 = list[3:9] # start ~ stop-1
+```
+
+### Environment Variables
+> A variable for storing and sharing system information
+> 
+> Environment Variable is set globally accessible.
+> Various program or script are able to refer the same value.
+> 
+> 1. Setting System Path
+> 2. Setting Program
+> 3. Saving User Info
+> 4. Saving Credential Info
+> 
+```shell
+# How to declare Environment Variable in UNIX
+export ENV_VAR=0123456789
+
+# How to declare Environment Variable in Windows
+set ENV_VAR=0123456789
+```
+```python
+# How to use Environment Variable in Python
+import os
+
+os.environ.get("ENV_VAR")
 ```
