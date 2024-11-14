@@ -1,8 +1,9 @@
 # Day36 for 100Days4Python
 # Project for Day36 : Stock News Monitoring
 
-import datetime
+from datetime import *
 import requests
+from twilio.rest import Client
 
 STOCK = "TSLA"
 ALPHA_VANTAGE_KEY = ""
@@ -13,8 +14,8 @@ NEWS_KEY = ""
 TWILIO_SID = ""
 TWILIO_TOKEN = ""
 
-ytd = datetime.date.today() - datetime.timedelta(2) # 1
-dby = datetime.date.today() - datetime.timedelta(3) # 2
+ytd = date.today() - timedelta(1)
+dby = date.today() - timedelta(2)
 
 stock_params = {
     "function": "TIME_SERIES_DAILY",
@@ -23,6 +24,7 @@ stock_params = {
 }
 stock = requests.get(url="https://www.alphavantage.co/query?", params=stock_params)
 stock_data = stock.json()
+
 ytd_close = float(stock_data["Time Series (Daily)"][f"{ytd}"]["4. close"])
 dby_close = float(stock_data["Time Series (Daily)"][f"{dby}"]["4. close"])
 print(ytd_close, dby_close)
@@ -34,22 +36,22 @@ if ytd_close >= dby_close * 1.05 or ytd_close <= dby_close * 0.95:
     }
     news = requests.get(url="https://newsapi.org/v2/everything?", params=news_params)
     news_data = news.json()
-    news_top3 = news_data["articles"][:3]
-    print(news_top3)
+    news_top3 = []
+    for article in news_data["articles"]:
+        if article["author"]:
+            news_top3.append(article)
+            if len(news_top3) > 3:
+                break
+    articles = [f"Headline: {article['title']}\nBrief: {article['description']}" for article in news_top3]
     
-
-
-## STEP 3: Use https://www.twilio.com
-# Send a seperate message with the percentage change and each article's title and description to your phone number.
-
-
-#Optional: Format the SMS message like this:
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?.
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?.
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
+    client = Client(TWILIO_SID, TWILIO_TOKEN)
+    if ytd_close > dby_close:
+        fluctuation_rate = f"📈{abs((ytd_close - dby_close) / dby_close * 100):.2f}%"
+    else:
+        fluctuation_rate = f"📉{abs((ytd_close - dby_close) / dby_close * 100):.2f}%"
+    message = client.messages.create(
+        from_='whatsapp:+14155238886',
+        to='whatsapp:+NUM',
+        body=f"{STOCK}: {fluctuation_rate}\n{articles[0]}\n\n{articles[1]}\n\n{articles[2]}"
+    )
+    print(message.body)
