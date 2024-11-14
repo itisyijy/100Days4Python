@@ -6,13 +6,13 @@ import requests
 from twilio.rest import Client
 
 STOCK = "TSLA"
-ALPHA_VANTAGE_KEY = ""
+ALPHA_VANTAGE_KEY = "KEY"
 
 COMPANY_NAME = "Tesla"
-NEWS_KEY = ""
+NEWS_KEY = "KEY"
 
-TWILIO_SID = ""
-TWILIO_TOKEN = ""
+TWILIO_SID = "KEY"
+TWILIO_TOKEN = "KEY"
 
 ytd = date.today() - timedelta(1)
 dby = date.today() - timedelta(2)
