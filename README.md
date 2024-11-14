@@ -854,3 +854,11 @@ import os
 
 os.environ.get("ENV_VAR")
 ```
+
+---
+
+## [Day 36](https://github.com/itisyijy/100Days4Python/tree/94721e19647b4f3163c219c3ad27ce3e5d73f4df/Day36)
+> Nothing to Comment
+
+---
+
