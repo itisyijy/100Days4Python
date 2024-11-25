@@ -862,3 +862,20 @@ os.environ.get("ENV_VAR")
 
 ---
 
+## [Day 37]()
+### HTTP Requests
+> #### 1. GET = requests.get()
+> Program request particular piece of data to external system.
+> The system gives the data in the response.
+> #### 2. POST = requests.post()
+> Program gives external system some piece of data
+> #### 3. PUT = requests.put()
+> Update data in the external system
+> #### 4. DELETE = requests.delete()
+> Delete data in the external system
+
+https://pixe.la/v1/users/auxigen/graphs/exercise.html
+
+---
+
+
