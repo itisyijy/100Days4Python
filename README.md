@@ -1,4 +1,4 @@
-<p align="center">
+from Day38.workout_sheet import today<p align="center">
   <a href="https://docs.python.org/3/">
     <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
   </a>
@@ -862,7 +862,7 @@ os.environ.get("ENV_VAR")
 
 ---
 
-## [Day 37]()
+## [Day 37](https://github.com/itisyijy/100Days4Python/tree/3af83ac7d3435a7f8fd1ee222786a2dd83b188da/Day37)
 ### HTTP Requests
 > #### 1. GET = requests.get()
 > Program request particular piece of data to external system.
@@ -878,4 +878,27 @@ https://pixe.la/v1/users/auxigen/graphs/exercise.html
 
 ---
 
+## [Day 38](https://github.com/itisyijy/100Days4Python/tree/8d39f1f7cda1486fcda1f9ead49e121bb22057bc/Day38)
+[Check Google Sheet](https://docs.google.com/spreadsheets/d/1xcuo1peI80QWm1XfSjyaauPQSrMtSlaxljPrlI8Vec0/edit?usp=sharing)
 
+```python
+import os
+
+# Set
+os.environ["ENV_VAR"] = "KEY"
+
+# Get
+KEY = os.environ["ENV_VAR"] # Raise exception if key does not exist
+KEY = os.environ.get("ENV_VAR") # return None if key does not exist
+KEY = os.environ.get("ENV_VAR", "MESSAGE") # return MESSAGE if key does not exist
+```
+
+* time.strftime()
+```python
+from datetime import datetime
+
+today = datetime.now()
+
+# Formatting Date & Time
+today.strftime("%X")
+```
