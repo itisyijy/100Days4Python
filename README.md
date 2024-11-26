@@ -906,6 +906,21 @@ today.strftime("%X")
 ---
 
 ## [Day 39_40]()
-> Unavailable Assignment.
-> 
-> I skipped this project.
+> Unavailable Assignment. I skipped this project.
+
+```python
+# .env file
+# ENV_VAR=SOMETHING
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+os.environ.get("ENV_VAR")
+```
+```python
+from datetime import datetime, timedelta
+
+today = datetime.today()
+three_days_after = today + timedelta(days=3)
+```
