@@ -905,7 +905,7 @@ today.strftime("%X")
 
 ---
 
-## [Day 39_40]()
+## [Day 39_40](https://github.com/itisyijy/100Days4Python/tree/15193671a402c3f8afeaeffa48ea43f501451642/Day39_40)
 > Unavailable Assignment. I skipped this project.
 
 ```python
