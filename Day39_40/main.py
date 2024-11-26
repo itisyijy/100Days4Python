@@ -1,0 +1,2 @@
+# Day39_40 for 100Days4Python
+# Day39_40 : I SKIPPED THIS PROJECT
