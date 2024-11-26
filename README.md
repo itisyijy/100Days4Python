@@ -902,3 +902,10 @@ today = datetime.now()
 # Formatting Date & Time
 today.strftime("%X")
 ```
+
+---
+
+## [Day 39_40]()
+> Unavailable Assignment.
+> 
+> I skipped this project.
