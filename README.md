@@ -1,11 +1,12 @@
 from Day38.workout_sheet import today<p align="center">
-  <a href="https://docs.python.org/3/">
-    <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
-  </a>
-  <br>
-  <a href="https://www.udemy.com/course/100-days-of-code/">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/320px-Udemy_logo.svg.png" />
-  </a>
+<a href="https://docs.python.org/3/">
+<img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
+</a>
+<br>
+<a href="https://www.udemy.com/course/100-days-of-code/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/320px-Udemy_logo.svg.png" />
+</a>
+
 </p>
 
 # [100 Days of Code - Python Exercise](https://github.com/phillipai/100-days-of-code-python)
@@ -145,7 +146,7 @@ from Day38.workout_sheet import today<p align="center">
 def is_answer():
 
     ...
-    
+
     # ¡MY CODE!
     if a.get("follower_count") >= b.get("follower_count") and guess == 'a':
         return True
@@ -153,13 +154,13 @@ def is_answer():
         return True
     else:
         return False
-    
+
     # ¡SOLUTION!
     if a.get("follower_count") >= b.get("follower_count"):
         return guess == 'a'
     else:
         return guess == 'b'
-    
+
     ...
 ```
 
@@ -168,6 +169,7 @@ def is_answer():
 ## [Day 15](https://github.com/itisyijy/100Days4Python/tree/c3a2d479bf60c7192e476f6f976b81dfff548a0f/Day15)
 
 - coffee machine project
+
 ```python
 def resource_check(order):
     # ¡MY CODE!
@@ -196,7 +198,9 @@ def resource_check(order):
 ---
 
 ## [Day 16](https://github.com/itisyijy/100Days4Python/tree/c77be7c917654187b328eecf412de66e268bf525/Day16)
+
 ### Procedural Programming
+
 > - the earliest paradigm of programming
 > - procedure leads another procedures
 > - top to bottom
@@ -204,6 +208,7 @@ def resource_check(order):
 increasing complexity and number of relationships
 
 ### Object-Oriented Programming, OOP
+
 > - blueprint of object = class, type
 > - individual objects generated from the class = object
 
@@ -227,7 +232,9 @@ Object is a way of combining data and functionality altogether in the same thing
 ---
 
 ## [Day 18]()
+
 ### Importing Modules
+
 ```python
 # import module_name
 import turtle
@@ -243,6 +250,7 @@ joe = Screen()
 ```
 
 ### Aliasing Modules
+
 ```python
 # import module_name as alias_name
 import turtle as t
@@ -250,6 +258,7 @@ kim = t.Turtle()
 ```
 
 ### Installing Modules
+
 - python standard library: already installed
 - others: installation needed. PyCharm will helps you.
 
@@ -259,13 +268,16 @@ kim = t.Turtle()
 # tuple implementation
 my_tuple = (1, 10, 3, 5, 7)
 ```
-- 'tuple' is similar with 'list', but it has an immutable order. 
+
+- 'tuple' is similar with 'list', but it has an immutable order.
 - Items of tuple and tuple itself cannot be modified.
 
 ---
 
 ## [Day 19](https://github.com/itisyijy/100Days4Python/tree/0b61b17e10355de9de687c07a6677ad2659e920a/Day19)
+
 ### Function as Inputs(Arguments)
+
 ```python
 def function_a(arg):
     return
@@ -274,12 +286,15 @@ def function_a(arg):
 def function_b(function_a):
     return
 ```
+
 ### Instaces
+
 ```python
 from turtle import Turtle
 timmy = Turtle()
 tommy = Turtle()
 ```
+
 - Turtle() -> class
 - timmy, tommy, ... -> object
 - timmy != tommy -> different instance
@@ -288,14 +303,17 @@ tommy = Turtle()
 ---
 
 ## [Day 20_21]()
+
 ### Class Inheritance
+
 The idea that classes can inherit from other classes(attributes and methods).
+
 ```python
 # Superclass
 class Animal:
     def __init__(self):
         self.num_eyes = 2
-    
+
     def breath(self):
       print("inhale, exhale")
 
@@ -308,7 +326,7 @@ class Fish(Animal):
     def breath(self):
         super().breath()
         print("doing this underwater")
-        
+
     def swim(self):
         print("moving in water.")
 
@@ -319,11 +337,12 @@ print(f"Number of eyes : {nemo.num_eyes}")  # 2
 ```
 
 ### Slicing
+
 How to slice python list, tuple, and dictionary
 
 ```python
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-print(alphabet)  # ['a', 'b', 'c', 'd', 'e', 'f', 'g']  
+print(alphabet)  # ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(alphabet[2:5])  # ['c', 'd', 'e']
 print(alphabet[:5])  # ['a', 'b', 'c', 'd', 'e']
 print(alphabet[2:])  # ['c', 'd', 'e', 'f', 'g']
@@ -337,11 +356,15 @@ print(alphabet[::-1])  # ['g', 'f', 'e', 'd', 'c', 'b', 'a']
 ---
 
 ## [Day 22](https://github.com/itisyijy/100Days4Python/tree/0c3afe9cca52840d069bf7dff3731d31c50ad3d5/Day22)
+
 ### The Pong Game
 
 ---
+
 ## [Day 23](https://github.com/itisyijy/100Days4Python/tree/b9cc8a34aa53f2f13ab241fcf01c445f4d6c202b/Day23)
+
 ### Turtle Crossing
+
 ```python
 #[car_manager.py]
 
@@ -367,7 +390,7 @@ class CarManager(Turtle):
         # ¡SOLUTION!
         self.hideturtle()
         self.all_cars = []
-    
+
     # ¡MY CODE!
     def move(self, level):
         if self.xcor() > -320 :
@@ -384,12 +407,12 @@ class CarManager(Turtle):
             random_y = random.randrange(-250, 250)
             new_car.goto(300, random_y)
             self.all_cars.append(new_car)
-    
+
     # ¡SOLUTION!
     def move(self):
         for car in self.all_cars:
             car.backward(self.move_speed)
-    
+
     # ¡SOLUTION!
     def level_up(self):
         self.move_speed += MOVE_INCREMENT
@@ -398,7 +421,9 @@ class CarManager(Turtle):
 ---
 
 ## [Day 24](https://github.com/itisyijy/100Days4Python/tree/83efb07b6a56140d07c07d357e4022b28ca07fc1/Day24)
+
 ### File Access
+
 ```python
 file = open("file.txt", mode="")
 file.read()     # mode="r", read
@@ -410,35 +435,39 @@ with open("file.txt", mode="") as file:
     file.read()
     file.write()
 ```
->[w]rite mode can make file with the contents when the file name doesn't exist.
-If the file exist, then overwrite the contents.
 
->In [r]ead mode, file contents are only readable. It cannot be modified.
+> [w]rite mode can make file with the contents when the file name doesn't exist.
+> If the file exist, then overwrite the contents.
 
->[a]ppend mode add the contents in EOF
+> In [r]ead mode, file contents are only readable. It cannot be modified.
+
+> [a]ppend mode add the contents in EOF
 
 ### Paths
+
 #### Absolute File Path
+
 > /mnt/c/Users/itisyijy/Desktop/100Days4Python/Day24
-> 
+>
 > The first " / " is root.
 
-Absolute file path always start off relative of the root 
+Absolute file path always start off relative of the root
 
 #### Relative File Path
+
 > ./100Days4Python/Day24
-> 
+>
 > " . " is working directory.
-> 
->In this case, "/mnt/c/Users/itisyijy/Desktop" is current directory.
-> 
+>
+> In this case, "/mnt/c/Users/itisyijy/Desktop" is current directory.
+>
 > " ./ " is optional
 
 > ../README.md
-> 
+>
 > " .. " is parent directory.
-> 
->In this case, "/mnt/c/Users/itisyijy/Desktop100Days4Python/Day24" is current directory.
+>
+> In this case, "/mnt/c/Users/itisyijy/Desktop100Days4Python/Day24" is current directory.
 
 - Absolute file path always start off relative of the root
 - Relative file path is relative with your current working directory.
@@ -446,8 +475,11 @@ Absolute file path always start off relative of the root
 ---
 
 ## [Day 25](https://github.com/itisyijy/100Days4Python/tree/857d92d36f77d01d03979986831101ee42d1083c/Day25)
+
 ### Working with CSV File
+
 CSV(Comma-Separated Values) : Representing tabular data that fits in table such as spreadsheet.
+
 ```python
 # Using csv
 import csv
@@ -461,7 +493,9 @@ with open("./weather_data.csv") as data_file:
     print(temperatures)
 
 ```
+
 ### Pandas for Data Analyzing
+
 ```python
 import pandas
 
@@ -510,8 +544,11 @@ result_pandas.to_csv("./result.csv")    # make DataFrame .csv file
 ---
 
 ## [Day 26](https://github.com/itisyijy/100Days4Python/tree/09cecff2cc7cea6a3031e9e3dc4565632d90a917/Day26)
+
 ### List Comprehension
-``` new_list = [new item for item in list if condition]```
+
+` new_list = [new item for item in list if condition]`
+
 ```python
 with open("./file1.txt", mode="r") as file1:
     one = [int(num) for num in file1.readlines()]
@@ -525,7 +562,9 @@ print(result)
 ```
 
 ### Dictionary Comprehension
-```new_dict = {new_key:new_value for item in list}```
+
+`new_dict = {new_key:new_value for item in list}`
+
 ```python
 import random
 
@@ -536,7 +575,9 @@ print(students_scores)
 passed_students = {student: score for (student, score) in students_scores.items() if score > 60}
 print(passed_students)
 ```
-```new_dict = {new_key:new_value for (key,value) in dict.items() if condition}```
+
+`new_dict = {new_key:new_value for (key,value) in dict.items() if condition}`
+
 ```python
 import pandas
 
@@ -554,7 +595,9 @@ for (index, row) in players_df.iterrows():
 ---
 
 ## [Day 27](https://github.com/itisyijy/100Days4Python/tree/d259d47e2c45ced1ea1caf27d0968191f8c4df2f/Day27)
+
 ### Advanced Python Arguments
+
 ```python
 # Arguments with Default Values
 def f1(a=1, b=2, c=3):
@@ -576,7 +619,7 @@ def f4(n, **kwargs):
     n *= kwargs["multiply"]
     return n
 
-# 
+#
 class Car:
     def __init__(self, **kwargs):
         self.brand = kwargs.get("brand")    # .get() -> return None when no value
@@ -587,19 +630,24 @@ class Car:
 ```
 
 ### Tkinter Widgets
-> Label, Entry, Button, Scale, Text, 
+
+> Label, Entry, Button, Scale, Text,
 > Spinbox, Checkbutton, Radiobutton, Listbox, ...
+
 ### Tkinter Layout Managers : no mix pack() with grid()
->pack()
+
+> pack()
 >
 > place(x=i, y=j)
-> 
+>
 > grid(column:i, row=j)
 
 ---
 
 ## [Day 28](https://github.com/itisyijy/100Days4Python/tree/8c054a1690ddb25e4d0c72c04be1e8686394417a/Day28)
+
 ### Pomodoro based on TKinter
+
 ```python
 import tkinter
 
@@ -616,7 +664,9 @@ tkinter.Tk().after_cancel(id)
 ```
 
 ## [Day 29](https://github.com/itisyijy/100Days4Python/tree/340b0efd10f2d26ef63b76ae5076afdb8769bfde/Day29)
+
 ### Password Manager
+
 ```python
 import pyperclip
 
@@ -641,9 +691,11 @@ entry.delete(0, END)
 ---
 
 ## [Day 30](https://github.com/itisyijy/100Days4Python/tree/dbf190bda9c208c25249656eeea787b45cb997d7/Day30)
+
 ### Handling Errors and Exceptions
->Frequently Occur : if/else
-> 
+
+> Frequently Occur : if/else
+>
 > Rarely Occur : try/except
 
 ```python
@@ -671,7 +723,9 @@ finally:    # Do this no matter what happens
 ```
 
 ### JSON File
+
 - Format : Nested Dictionary
+
 ```python
 import json
 
@@ -689,28 +743,33 @@ with open("data.txt", mode="w") as file:
 ---
 
 ## [Day 31](https://github.com/itisyijy/100Days4Python/tree/a935c1194d80c1c3c57d9d0a028e22e09bbd70bf/Day31)
+
 ### Flash Card Program
-* Pandas
-  * read_csv()
-  * to_csv()
-  * to_dict()
-* Random
-* Tkinter
-  * after() / after_cancel()
-  * Canvas
-    * create_image()
-    * create_text()
-    * itemconfig()
-  * Button 
+
+- Pandas
+  - read_csv()
+  - to_csv()
+  - to_dict()
+- Random
+- Tkinter
+  - after() / after_cancel()
+  - Canvas
+    - create_image()
+    - create_text()
+    - itemconfig()
+  - Button
 
 ---
 
 ## [Day 32](https://github.com/itisyijy/100Days4Python/tree/952f99a1ec12bbe0e3a91ed8448de988afb3f6a2/Day32)
+
 ### What is SMTP(Simple Mail Transfer Protocol)?
+
 > the rules that determine how an email is received by mail servers
 > passed onto the next mail server and how email can be sent around
 
 ### smtplib
+
 ```python
 import smtplib
 
@@ -736,6 +795,7 @@ with smtplib.SMTP("smtp.gmail.com") as gmail_connection:
 ```
 
 ### datetime
+
 ```python
 import datetime
 
@@ -754,12 +814,16 @@ print(my_birthday)
 ---
 
 ## [Day 33](https://github.com/itisyijy/100Days4Python/tree/dbaac87d164ebc301c01774dc7ce25e404121fe4/Day33)
+
 ### Application Programming Interface, API
+
 > Set of commands, functions, protocols, and objects
 > that programmers can use to create software or interact with an external system.
 
 ### API Endpoint (URL) : Location that data is stored
+
 ### API Request
+
 ```python
 import requests
 
@@ -773,10 +837,12 @@ response = requests.get("api.something.com", params=parameters)
 response.raise_for_status()
 
 # json format data
-data = response.json()     
+data = response.json()
 
 ```
+
 #### API Response Code
+
 > - 1XX : Hold On
 > - 2XX : Here You Go
 > - 3XX : Go Away
@@ -786,7 +852,9 @@ data = response.json()
 ---
 
 ## [Day 34](https://github.com/itisyijy/100Days4Python/tree/ce6bf22c5be6d711796ded79c097226c8bbc00e2/Day34)
+
 ### HTML Entity
+
 ```python
 import html
 
@@ -794,6 +862,7 @@ html.unescape("This is an example with &lt;b&gt;bold&lt;/b&gt; text.")
 ```
 
 ### Type Hint
+
 ```python
 # Assign Type of Variable #
 name: str
@@ -813,6 +882,7 @@ is_adult("twelve")  # Error message
 ```
 
 ### .grid() padding
+
 ```python
 import tkinter
 
@@ -822,25 +892,28 @@ tkinter.Label().grid(column=1, row=2, padx=20, pady=10)
 ---
 
 ## [Day35](https://github.com/itisyijy/100Days4Python/tree/65a71d62fc72ca586409939b98397f47f5ae15e9/Day35)
+
 ### API Key for User Authentication
 
 ### Slicing
+
 ```python
 list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 lsit_3_to_8 = list[3:9] # start ~ stop-1
 ```
 
 ### Environment Variables
+
 > A variable for storing and sharing system information
-> 
+>
 > Environment Variable is set globally accessible.
 > Various program or script are able to refer the same value.
-> 
+>
 > 1. Setting System Path
 > 2. Setting Program
 > 3. Saving User Info
 > 4. Saving Credential Info
-> 
+
 ```shell
 # How to declare Environment Variable in UNIX
 export ENV_VAR=0123456789
@@ -848,6 +921,7 @@ export ENV_VAR=0123456789
 # How to declare Environment Variable in Windows
 set ENV_VAR=0123456789
 ```
+
 ```python
 # How to use Environment Variable in Python
 import os
@@ -858,20 +932,30 @@ os.environ.get("ENV_VAR")
 ---
 
 ## [Day 36](https://github.com/itisyijy/100Days4Python/tree/94721e19647b4f3163c219c3ad27ce3e5d73f4df/Day36)
+
 > Nothing to Comment
 
 ---
 
 ## [Day 37](https://github.com/itisyijy/100Days4Python/tree/3af83ac7d3435a7f8fd1ee222786a2dd83b188da/Day37)
+
 ### HTTP Requests
+
 > #### 1. GET = requests.get()
+>
 > Program request particular piece of data to external system.
 > The system gives the data in the response.
+>
 > #### 2. POST = requests.post()
+>
 > Program gives external system some piece of data
+>
 > #### 3. PUT = requests.put()
+>
 > Update data in the external system
+>
 > #### 4. DELETE = requests.delete()
+>
 > Delete data in the external system
 
 https://pixe.la/v1/users/auxigen/graphs/exercise.html
@@ -879,6 +963,7 @@ https://pixe.la/v1/users/auxigen/graphs/exercise.html
 ---
 
 ## [Day 38](https://github.com/itisyijy/100Days4Python/tree/8d39f1f7cda1486fcda1f9ead49e121bb22057bc/Day38)
+
 [Check Google Sheet](https://docs.google.com/spreadsheets/d/1xcuo1peI80QWm1XfSjyaauPQSrMtSlaxljPrlI8Vec0/edit?usp=sharing)
 
 ```python
@@ -893,7 +978,8 @@ KEY = os.environ.get("ENV_VAR") # return None if key does not exist
 KEY = os.environ.get("ENV_VAR", "MESSAGE") # return MESSAGE if key does not exist
 ```
 
-* time.strftime()
+- time.strftime()
+
 ```python
 from datetime import datetime
 
@@ -906,6 +992,7 @@ today.strftime("%X")
 ---
 
 ## [Day 39_40](https://github.com/itisyijy/100Days4Python/tree/15193671a402c3f8afeaeffa48ea43f501451642/Day39_40)
+
 > Unavailable Assignment. I skipped this project.
 
 ```python
@@ -918,9 +1005,38 @@ from dotenv import load_dotenv
 load_dotenv()
 os.environ.get("ENV_VAR")
 ```
+
 ```python
 from datetime import datetime, timedelta
 
 today = datetime.today()
 three_days_after = today + timedelta(days=3)
 ```
+
+---
+
+## [Day 41]()
+
+### How Does the Internet Work?
+
+Server <-> Client
+
+> Request "www.google.com"
+>
+> - Browser sends the message to Internet Service Provider(ISP)
+> - ISP sends the message to Domain Name System(DNS) Server
+>   - DNS Server finds exact IP address of request
+> - DNS Server sends IP address back to browser
+> - Browser send direct request to the IP address through ISP
+> - The server of the IP sends the website files
+
+> Website Files
+>
+> - Hyper Text Markup Language(HTML) - Structure of website
+> - CSS - Styling of website
+> - JS - Behavior of website
+
+> HTML Elements
+> - <Start_Tag> Content <\End_Tag>
+> - <Self-closing_Tag>
+> - <HTML_elemnet HTML_Attribute="">
