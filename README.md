@@ -1037,6 +1037,38 @@ Server <-> Client
 > - JS - Behavior of website
 
 > HTML Elements
+>
 > - <Start_Tag> Content <\End_Tag>
 > - <Self-closing_Tag>
 > - <HTML_elemnet HTML_Attribute="">
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of Webpage</title>
+    <meta charset="incoding" />
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <ol>
+      <!-- ordered list -->
+      <li>list item</li>
+    </ol>
+    <ul>
+      <!-- unordered list -->
+       <li>list item</li>
+    </ul>
+    <hr />
+    <!-- horizontal rule -->
+    <p>
+        paragraph
+        <em>emphasis, italic<em>
+        <strong>importance, bold</strong>
+        <a href="src.file">Link Text</a>
+        <img src="image.file" alt="alternative text for image">
+    </p>
+
+  </body>
+</html>
+```
