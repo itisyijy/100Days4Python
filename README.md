@@ -1072,10 +1072,13 @@ Server <-> Client
   </body>
 </html>
 ```
+
 ---
 
 ## [Day 42]()
+
 ### HTML Table
+
 ```html
 <table>
   <thead>
@@ -1106,41 +1109,55 @@ Server <-> Client
   </tfoot>
 </table>
 ```
+
 ### [HTML Form & Input](https://github.com/itisyijy/grey_cona.git)
+
 please check "contact_details.html" in grey_cona
+
 > get data from user and submit the data to server
 
 ```html
 <form action="address_to_server" method="GET/POST">
   <label name="name">Name:</label>
-  <input type="text/password/..." name="name" id="name">
-  
-  <textarea name="message" cols="20" rows="10" placeholder="write down your message."></textarea>
-  
+  <input type="text/password/..." name="name" id="name" />
+
+  <textarea
+    name="message"
+    cols="20"
+    rows="10"
+    placeholder="write down your message."
+  ></textarea>
+
   <select name="country">
     <!-- dropdown list -->
     <option value="korea">korea</option>
     <option value="usa">usa</option>
   </select>
-  
 </form>
 ```
+
 ---
 
 ## [Day 43]()
+
 ### CSS
+
 #### Priority of CSS Style
+
 style more specific is powerful.
+
 > inline css > internal css > external css
 >
-> inline style > id > class, attribute, pseudo-class > tag > *
+> inline style > id > class, attribute, pseudo-class > tag > \*
 
 inline css
+
 ```html
 <tag style="~~~~~"></tag>
 ```
 
 internal css
+
 ```html
 <head>
   <style>
@@ -1152,11 +1169,13 @@ internal css
 ```
 
 external css
+
 ```html
 <head>
   <link rel="stylesheet" href="file.css" />
 </head>
 ```
+
 ```css
 h1 {
   ~~~~~
@@ -1164,6 +1183,7 @@ h1 {
 ```
 
 ### CSS Syntax
+
 > selector { property: value; } <br>
 > = who { what: how; }
 
@@ -1172,6 +1192,7 @@ h1 {
 <tag class="b c"></tag>
 <tag id="unique"></tag>
 ```
+
 ```css
 /* Tag Selectors */
 tag {
@@ -1184,11 +1205,11 @@ tag {
 }
 
 .b {
-color: black;
+  color: black;
 }
 
 .c {
-color: black;
+  color: black;
 }
 
 /* ID Selectors */
@@ -1196,10 +1217,99 @@ color: black;
   color: orange;
 }
 ```
+
 #### class vs. id
+
 > class: certain category or group, single tag with multiple class is possible
 
 > id: one and only, single, unique
 
 #### "pseudo-class" - express different status
 
+---
+
+## [Day 44]()
+
+### Block Elements
+
+only element in the row<br>
+can be resize
+
+```
+paragraphs <p>
+headers <h1>-<h6>
+divisions <div>
+list <ol><ul> and list items <li>
+forms <form>
+...
+```
+
+### Inline Elements
+
+can be side by side<br>
+cannot resize
+
+```
+span <span>
+images <img>
+anchors <a>
+...
+```
+
+### Inline-Block Element
+
+can be side by side and resizable
+
+```
+block_element {
+  display: inline-block;
+}
+
+inline_element {
+  display: inline-block;
+}
+```
+
+### None Element
+
+```
+element {
+  display: none;
+}
+>>> as if it is deleted
+```
+
+```
+cf.)
+element {
+  visibility: hidden;
+}
+>>> the element still occupies the space
+```
+
+### CSS Rendering Hierarchy
+
+1. Contents is everything.
+2. Order comes from code.
+3. Children sit on parents.
+
+### CSS Position
+
+- static : default HTML flow
+- relative : relative position based on static position. no impact on other elements. add margin.
+  ```
+  img {
+    position: relative;
+    top: 00;
+    bottom: 00;
+    left: 00;
+    right: 00;
+  }
+  >>> similar with concept of margin. (e.g., margin-top)
+  ```
+- absolute : set margin relative to entire docs(HTML), but can be adjusted based on nearest parent(position: relative;). not occupy original space.
+- fixed : fixed position by viewport
+
+### Center
+- text-align: center; >>> center everything with no width set
+- margin: 0 auto 0 auto; >>> center things with width set
