@@ -1125,3 +1125,81 @@ please check "contact_details.html" in grey_cona
   
 </form>
 ```
+---
+
+## [Day 43]()
+### CSS
+#### Priority of CSS Style
+style more specific is powerful.
+> inline css > internal css > external css
+>
+> inline style > id > class, attribute, pseudo-class > tag > *
+
+inline css
+```html
+<tag style="~~~~~"></tag>
+```
+
+internal css
+```html
+<head>
+  <style>
+    h1 {
+      ~~~~~
+    }
+  </style>
+</head>
+```
+
+external css
+```html
+<head>
+  <link rel="stylesheet" href="file.css" />
+</head>
+```
+```css
+h1 {
+  ~~~~~
+}
+```
+
+### CSS Syntax
+> selector { property: value; } <br>
+> = who { what: how; }
+
+```html
+<tag class="a"></tag>
+<tag class="b c"></tag>
+<tag id="unique"></tag>
+```
+```css
+/* Tag Selectors */
+tag {
+  color: red;
+}
+
+/* Class Selectors */
+.a {
+  color: white;
+}
+
+.b {
+color: black;
+}
+
+.c {
+color: black;
+}
+
+/* ID Selectors */
+#unique {
+  color: orange;
+}
+```
+#### class vs. id
+> class: certain category or group, single tag with multiple class is possible
+
+> id: one and only, single, unique
+
+#### "pseudo-class" - express different status
+
