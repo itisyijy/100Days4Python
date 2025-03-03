@@ -1,4 +1,4 @@
-from Day38.workout_sheet import today<p align="center">
+<p align="center">
 <a href="https://docs.python.org/3/">
 <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" />
 </a>
