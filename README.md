@@ -1015,7 +1015,7 @@ three_days_after = today + timedelta(days=3)
 
 ---
 
-## [Day 41]()
+## [Day 41](https://github.com/itisyijy/100Days4Python/tree/6ddddc097b90fb0e30344d52c1bf0dd7d4f867be/Day41)
 
 ### How Does the Internet Work?
 
@@ -1071,4 +1071,57 @@ Server <-> Client
 
   </body>
 </html>
+```
+---
+
+## [Day 42]()
+### HTML Table
+```html
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Price</td>
+      <td>Quantity</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Laptop</td>
+      <td>$1000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Smartphone</td>
+      <td>$599</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$3797</td>
+      <td>5</td>
+    </tr>
+  </tfoot>
+</table>
+```
+### [HTML Form & Input](https://github.com/itisyijy/grey_cona.git)
+please check "contact_details.html" in grey_cona
+> get data from user and submit the data to server
+
+```html
+<form action="address_to_server" method="GET/POST">
+  <label name="name">Name:</label>
+  <input type="text/password/..." name="name" id="name">
+  
+  <textarea name="message" cols="20" rows="10" placeholder="write down your message."></textarea>
+  
+  <select name="country">
+    <!-- dropdown list -->
+    <option value="korea">korea</option>
+    <option value="usa">usa</option>
+  </select>
+  
+</form>
 ```
