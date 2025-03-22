@@ -1313,3 +1313,10 @@ element {
 ### Center
 - text-align: center; >>> center everything with no width set
 - margin: 0 auto 0 auto; >>> center things with width set
+
+
+---
+
+## [Day 45]()
+### Web Scrapping
+* BeautifulSoup: Drilling HTML files. Find html tags and its contents inside
